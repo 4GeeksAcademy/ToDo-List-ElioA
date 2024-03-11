@@ -1,12 +1,45 @@
 
-/* 
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+li:hover span {
+	opacity: 1;
+	width: 40px;
+}
+span {
+	background: rgb(31, 18, 219);
+	height: 35px;
+	width: 0;
+	margin-right: 10px;
+	margin-left: 10px;
+	text-align: center;
+	display: inline-block;
+	color: white;
+	opacity: 0;
+	transition: 0.2s linear;
+}
 
-*/
+i.fa-trash {
+	margin: 7px;
+}
+li.clicked {
+	color: gray;
+	text-decoration: line-through;
+}
+li {
+	background: #fff;
+	padding-left: 10px;
+	line-height: 2em;
+	margin: 0;
+	color: #666;
+}
+ul {
+	cursor: pointer;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#list{
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
