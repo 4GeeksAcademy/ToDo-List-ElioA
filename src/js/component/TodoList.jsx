@@ -34,7 +34,7 @@ return (
                 <button type="button" className="btn btn-success todo-button" onClick={()=>addTodo()}>Add Task</button>
                 
             </form>
-            <ul>
+            <ul id="myUl">
                  {list.map((item, index) => (<li className="todo-row" key={index} style={{marginTop:"20px"}}>{item}
                  <span className="rounded" onClick={()=>deleteTodo(item)}><i className="fas fa-trash"></i></span></li>))}
             </ul>
