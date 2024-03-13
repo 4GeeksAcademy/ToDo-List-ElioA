@@ -39,7 +39,7 @@ return (
                  <span className="rounded" onClick={()=>deleteTodo(item)}><i className="fas fa-trash"></i></span></li>))}
             </ul>
             <div className="card-footer" style={{marginTop:"10px", color:"white"}} >
-                 <p>{remainingTasks()}</p>
+                 <span>{remainingTasks()}</span>
             </div>
         </div>    
         );
