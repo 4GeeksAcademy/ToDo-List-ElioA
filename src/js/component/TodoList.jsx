@@ -25,7 +25,7 @@ const remainingTasks=()=>{
 
 return (
         <div className="card"  id="list">
-            <div class="card-header text-center">
+            <div className="card-header text-center">
                 <h1 className="d-flex justify-content-center m-3">My Todo list</h1>
             </div>
             <form className="todo-form d-flex justify-content-center">
@@ -38,7 +38,7 @@ return (
                  {list.map((item, index) => (<li className="todo-row" key={index} style={{marginTop:"20px"}}>{item}
                  <span className="rounded" onClick={()=>deleteTodo(item)}><i className="fas fa-trash"></i></span></li>))}
             </ul>
-            <div class="card-footer" style={{marginTop:"10px", color:"white"}} >
+            <div className="card-footer" style={{marginTop:"10px", color:"white"}} >
                  <p>{remainingTasks()}</p>
             </div>
         </div>    
